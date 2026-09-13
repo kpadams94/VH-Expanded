@@ -1,0 +1,11 @@
+/.local/
+/.gradle/
+/build/
+/run/
+/libs/
+/asset-staging/
+/recipe-tweaker/
+/docs/research/evidence/
+/docs/research/remastered-mod-box-config.json
+/docs/recipes/heart-canisters/issue20-before-modboxes.json
+**/__pycache__/

@@ -1,0 +1,25 @@
+{
+  "POOL": {
+    "Baubley Heart Canisters": {
+      "entries": [
+        {
+          "value": { "id": "bhc:heart_amulet", "amountMin": 1, "amountMax": 1 },
+          "weight": 100
+        },
+        {
+          "value": { "id": "bhc:red_heart", "amountMin": 1, "amountMax": 1 },
+          "weight": 1000
+        },
+        {
+          "value": { "id": "bhc:yellow_heart", "amountMin": 1, "amountMax": 1 },
+          "weight": 100
+        },
+        {
+          "value": { "id": "bhc:green_heart", "amountMin": 1, "amountMax": 1 },
+          "weight": 1
+        }
+      ],
+      "weight": 1
+    }
+  }
+}

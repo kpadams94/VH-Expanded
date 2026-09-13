@@ -1,0 +1,33 @@
+{
+  "required": true,
+  "minVersion": "0.8.5",
+  "package": "dev.kpada.vhexpanded.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "VaultGeneralAccessor",
+    "HeartHealthMixin",
+    "HeartRecipeMixin",
+    "RepulsorBindingsMixin",
+    "ManaBarrierUpdatesInvoker",
+    "ManaCostInvoker",
+    "SkillAdapterMixin",
+    "AbilityStylesAccessor",
+    "TieredSkillAccessor",
+    "RepulsorDescriptionsMixin",
+    "ModConfigsMixin",
+    "ExperiencedExpertiseMixin",
+    "SkillDescriptionsMixin",
+    "VaultPlayerStatsMixin",
+    "PlayerVaultStatsMixin"
+  ],
+  "client": [
+    "RepulsorLabelsMixin",
+    "VaultEndScreenMixin",
+    "VaultExitDataMixin",
+    "ClientVaultXpTrackerMixin",
+    "VaultXpTrackerModuleMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

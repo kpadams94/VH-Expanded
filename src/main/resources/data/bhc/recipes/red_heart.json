@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "the_vault:vault_essence"
+    },
+    {
+      "item": "minecraft:apple"
+    },
+    {
+      "item": "the_vault:vault_meat"
+    }
+  ],
+  "result": {
+    "item": "bhc:red_heart",
+    "count": 1
+  }
+}

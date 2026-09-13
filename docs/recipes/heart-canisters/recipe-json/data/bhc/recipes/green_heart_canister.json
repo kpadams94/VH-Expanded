@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bhc:green_heart"
+    },
+    {
+      "item": "bhc:yellow_heart_canister"
+    },
+    {
+      "item": "the_vault:black_chromatic_steel_ingot"
+    },
+    {
+      "item": "minecraft:nether_star"
+    }
+  ],
+  "result": {
+    "item": "bhc:green_heart_canister",
+    "count": 1
+  }
+}

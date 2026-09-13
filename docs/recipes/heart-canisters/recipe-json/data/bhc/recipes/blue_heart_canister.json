@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bhc:blue_heart"
+    },
+    {
+      "item": "bhc:green_heart_canister"
+    },
+    {
+      "item": "the_vault:echoing_ingot"
+    },
+    {
+      "item": "minecraft:netherite_block"
+    }
+  ],
+  "result": {
+    "item": "bhc:blue_heart_canister",
+    "count": 1
+  }
+}

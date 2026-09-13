@@ -1,0 +1,962 @@
+{
+  "schema": "vault-hunters-expanded/recipe-tweaker",
+  "schemaVersion": 1,
+  "minecraftVersion": "1.18.2",
+  "modpack": "Vault Hunters Third Edition - Remastered 2.0.4",
+  "createdAt": "2026-09-13T03:52:53.789Z",
+  "integrationNotes": [
+    "Handoff manifest; this whole file is not a Minecraft datapack.",
+    "Recipe paths target Minecraft 1.18.2 (pack_format 9).",
+    "Remastered CraftTweaker scripts can remove or override data recipes; reconcile scripts before installing changes.",
+    "Anvil entries require mod code; they are not vanilla recipe JSON.",
+    "Recipe IDs identify crafting rules; outputItemId references an existing registered item. Do not register duplicate items or recreate their functionality.",
+    "Replacement recipe paths retain the original namespace and ID. For CraftTweaker, remove the old recipe by exact ID before adding the replacement."
+  ],
+  "recipes": [
+    {
+      "id": "bhc:canister",
+      "name": "Canister",
+      "action": "replace",
+      "sourceRecipeId": "bhc:canister",
+      "outputItemId": "bhc:canister",
+      "itemRegistrationRequired": false,
+      "path": "data/bhc/recipes/canister.json",
+      "summary": "Crafting · shaped",
+      "notes": "",
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          " A ",
+          "ABA",
+          " A "
+        ],
+        "key": {
+          "A": {
+            "item": "the_vault:chromatic_iron_ingot"
+          },
+          "B": {
+            "item": "the_vault:perfect_larimar"
+          }
+        },
+        "result": {
+          "item": "bhc:canister",
+          "count": 1
+        }
+      },
+      "editor": {
+        "id": "bhc:canister",
+        "name": "Canister",
+        "type": "shaped",
+        "slots": [
+          null,
+          {
+            "item": "the_vault:chromatic_iron_ingot"
+          },
+          null,
+          {
+            "item": "the_vault:chromatic_iron_ingot"
+          },
+          {
+            "item": "the_vault:perfect_larimar"
+          },
+          {
+            "item": "the_vault:chromatic_iron_ingot"
+          },
+          null,
+          {
+            "item": "the_vault:chromatic_iron_ingot"
+          },
+          null
+        ],
+        "output": "bhc:canister",
+        "count": 1,
+        "experience": 0,
+        "cookingtime": 200,
+        "levels": 1,
+        "materialCost": 1,
+        "notes": "",
+        "action": "replace",
+        "source": "bhc:canister"
+      }
+    },
+    {
+      "id": "bhc:red_heart",
+      "name": "Miniature Red Heart",
+      "action": "add",
+      "sourceRecipeId": null,
+      "outputItemId": "bhc:red_heart",
+      "itemRegistrationRequired": false,
+      "path": "data/bhc/recipes/red_heart.json",
+      "summary": "Crafting · shapeless",
+      "notes": "",
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "item": "the_vault:vault_essence"
+          },
+          {
+            "item": "minecraft:apple"
+          },
+          {
+            "item": "the_vault:vault_meat"
+          }
+        ],
+        "result": {
+          "item": "bhc:red_heart",
+          "count": 1
+        }
+      },
+      "editor": {
+        "id": "bhc:red_heart",
+        "name": "Miniature Red Heart",
+        "type": "shapeless",
+        "slots": [
+          {
+            "item": "the_vault:vault_essence"
+          },
+          {
+            "item": "minecraft:apple"
+          },
+          {
+            "item": "the_vault:vault_meat"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "output": "bhc:red_heart",
+        "count": 1,
+        "experience": 0,
+        "cookingtime": 200,
+        "levels": 1,
+        "materialCost": 1,
+        "notes": "",
+        "action": "add",
+        "source": null,
+        "extra": {}
+      }
+    },
+    {
+      "id": "bhc:red_heart_canister",
+      "name": "red heart canister",
+      "action": "replace",
+      "sourceRecipeId": "bhc:red_heart_canister",
+      "outputItemId": "bhc:red_heart_canister",
+      "itemRegistrationRequired": false,
+      "path": "data/bhc/recipes/red_heart_canister.json",
+      "summary": "Crafting · shapeless",
+      "notes": "",
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "item": "bhc:red_heart"
+          },
+          {
+            "item": "bhc:canister"
+          },
+          {
+            "item": "the_vault:chromatic_iron_ingot"
+          }
+        ],
+        "result": {
+          "item": "bhc:red_heart_canister",
+          "count": 1
+        }
+      },
+      "editor": {
+        "id": "bhc:red_heart_canister",
+        "name": "red heart canister",
+        "type": "shapeless",
+        "slots": [
+          {
+            "item": "bhc:red_heart"
+          },
+          {
+            "item": "bhc:canister"
+          },
+          {
+            "item": "the_vault:chromatic_iron_ingot"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "output": "bhc:red_heart_canister",
+        "count": 1,
+        "experience": 0,
+        "cookingtime": 200,
+        "levels": 1,
+        "materialCost": 1,
+        "notes": "",
+        "action": "replace",
+        "source": "bhc:red_heart_canister",
+        "extra": {}
+      }
+    },
+    {
+      "id": "bhc:yellow_heart_canister",
+      "name": "yellow heart canister",
+      "action": "replace",
+      "sourceRecipeId": "bhc:yellow_heart_canister",
+      "outputItemId": "bhc:yellow_heart_canister",
+      "itemRegistrationRequired": false,
+      "path": "data/bhc/recipes/yellow_heart_canister.json",
+      "summary": "Crafting · shapeless",
+      "notes": "",
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "item": "bhc:yellow_heart"
+          },
+          {
+            "item": "bhc:red_heart_canister"
+          },
+          {
+            "item": "the_vault:chromatic_steel_ingot"
+          }
+        ],
+        "result": {
+          "item": "bhc:yellow_heart_canister",
+          "count": 1
+        }
+      },
+      "editor": {
+        "id": "bhc:yellow_heart_canister",
+        "name": "yellow heart canister",
+        "type": "shapeless",
+        "slots": [
+          {
+            "item": "bhc:yellow_heart"
+          },
+          {
+            "item": "bhc:red_heart_canister"
+          },
+          {
+            "item": "the_vault:chromatic_steel_ingot"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "output": "bhc:yellow_heart_canister",
+        "count": 1,
+        "experience": 0,
+        "cookingtime": 200,
+        "levels": 1,
+        "materialCost": 1,
+        "notes": "",
+        "action": "replace",
+        "source": "bhc:yellow_heart_canister",
+        "extra": {}
+      }
+    },
+    {
+      "id": "bhc:green_heart_canister",
+      "name": "green heart canister",
+      "action": "replace",
+      "sourceRecipeId": "bhc:green_heart_canister",
+      "outputItemId": "bhc:green_heart_canister",
+      "itemRegistrationRequired": false,
+      "path": "data/bhc/recipes/green_heart_canister.json",
+      "summary": "Crafting · shapeless",
+      "notes": "",
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "item": "bhc:green_heart"
+          },
+          {
+            "item": "bhc:yellow_heart_canister"
+          },
+          {
+            "item": "the_vault:black_chromatic_steel_ingot"
+          },
+          {
+            "item": "minecraft:nether_star"
+          }
+        ],
+        "result": {
+          "item": "bhc:green_heart_canister",
+          "count": 1
+        }
+      },
+      "editor": {
+        "id": "bhc:green_heart_canister",
+        "name": "green heart canister",
+        "type": "shapeless",
+        "slots": [
+          {
+            "item": "bhc:green_heart"
+          },
+          {
+            "item": "bhc:yellow_heart_canister"
+          },
+          {
+            "item": "the_vault:black_chromatic_steel_ingot"
+          },
+          {
+            "item": "minecraft:nether_star"
+          },
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "output": "bhc:green_heart_canister",
+        "count": 1,
+        "experience": 0,
+        "cookingtime": 200,
+        "levels": 1,
+        "materialCost": 1,
+        "notes": "",
+        "action": "replace",
+        "source": "bhc:green_heart_canister",
+        "extra": {}
+      }
+    },
+    {
+      "id": "bhc:blue_heart_canister",
+      "name": "blue heart canister",
+      "action": "replace",
+      "sourceRecipeId": "bhc:blue_heart_canister",
+      "outputItemId": "bhc:blue_heart_canister",
+      "itemRegistrationRequired": false,
+      "path": "data/bhc/recipes/blue_heart_canister.json",
+      "summary": "Crafting · shapeless",
+      "notes": "",
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "item": "bhc:blue_heart"
+          },
+          {
+            "item": "bhc:green_heart_canister"
+          },
+          {
+            "item": "the_vault:echoing_ingot"
+          },
+          {
+            "item": "minecraft:netherite_block"
+          }
+        ],
+        "result": {
+          "item": "bhc:blue_heart_canister",
+          "count": 1
+        }
+      },
+      "editor": {
+        "id": "bhc:blue_heart_canister",
+        "name": "blue heart canister",
+        "type": "shapeless",
+        "slots": [
+          {
+            "item": "bhc:blue_heart"
+          },
+          {
+            "item": "bhc:green_heart_canister"
+          },
+          {
+            "item": "the_vault:echoing_ingot"
+          },
+          {
+            "item": "minecraft:netherite_block"
+          },
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "output": "bhc:blue_heart_canister",
+        "count": 1,
+        "experience": 0,
+        "cookingtime": 200,
+        "levels": 1,
+        "materialCost": 1,
+        "notes": "",
+        "action": "replace",
+        "source": "bhc:blue_heart_canister",
+        "extra": {}
+      }
+    },
+    {
+      "id": "bhc:heart_amulet",
+      "name": "heart amulet",
+      "action": "replace",
+      "sourceRecipeId": "bhc:heart_amulet",
+      "outputItemId": "bhc:heart_amulet",
+      "itemRegistrationRequired": false,
+      "path": "data/bhc/recipes/heart_amulet.json",
+      "summary": "Crafting · shaped",
+      "notes": "",
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "A A",
+          "BCB",
+          " B "
+        ],
+        "key": {
+          "A": {
+            "tag": "forge:string"
+          },
+          "B": {
+            "tag": "forge:glass"
+          },
+          "C": {
+            "item": "the_vault:gem_pog"
+          }
+        },
+        "result": {
+          "item": "bhc:heart_amulet",
+          "count": 1
+        }
+      },
+      "editor": {
+        "id": "bhc:heart_amulet",
+        "name": "heart amulet",
+        "type": "shaped",
+        "slots": [
+          {
+            "tag": "forge:string"
+          },
+          null,
+          {
+            "tag": "forge:string"
+          },
+          {
+            "tag": "forge:glass"
+          },
+          {
+            "item": "the_vault:gem_pog"
+          },
+          {
+            "tag": "forge:glass"
+          },
+          null,
+          {
+            "tag": "forge:glass"
+          },
+          null
+        ],
+        "output": "bhc:heart_amulet",
+        "count": 1,
+        "experience": 0,
+        "cookingtime": 200,
+        "levels": 1,
+        "materialCost": 1,
+        "notes": "",
+        "action": "replace",
+        "source": "bhc:heart_amulet",
+        "extra": {}
+      }
+    },
+    {
+      "id": "bhc:yellow_heart",
+      "name": "Miniature Yellow Heart",
+      "action": "add",
+      "sourceRecipeId": null,
+      "outputItemId": "bhc:yellow_heart",
+      "itemRegistrationRequired": false,
+      "path": "data/bhc/recipes/yellow_heart.json",
+      "summary": "Crafting · shapeless",
+      "notes": "",
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "item": "the_vault:extraordinary_larimar"
+          },
+          {
+            "item": "minecraft:golden_carrot"
+          },
+          {
+            "item": "the_vault:vault_meat_block"
+          }
+        ],
+        "result": {
+          "item": "bhc:yellow_heart",
+          "count": 1
+        }
+      },
+      "editor": {
+        "id": "bhc:yellow_heart",
+        "name": "Miniature Yellow Heart",
+        "type": "shapeless",
+        "slots": [
+          {
+            "item": "the_vault:extraordinary_larimar"
+          },
+          {
+            "item": "minecraft:golden_carrot"
+          },
+          {
+            "item": "the_vault:vault_meat_block"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "output": "bhc:yellow_heart",
+        "count": 1,
+        "experience": 0,
+        "cookingtime": 200,
+        "levels": 1,
+        "materialCost": 1,
+        "notes": "",
+        "action": "add",
+        "source": null,
+        "extra": {}
+      }
+    },
+    {
+      "id": "bhc:green_heart",
+      "name": "Miniature Green Heart",
+      "action": "add",
+      "sourceRecipeId": null,
+      "outputItemId": "bhc:green_heart",
+      "itemRegistrationRequired": false,
+      "path": "data/bhc/recipes/green_heart.json",
+      "summary": "Crafting · shapeless",
+      "notes": "",
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "item": "the_vault:gem_pog"
+          },
+          {
+            "item": "minecraft:golden_apple"
+          },
+          {
+            "item": "the_vault:vault_diamond_block"
+          }
+        ],
+        "result": {
+          "item": "bhc:green_heart",
+          "count": 1
+        }
+      },
+      "editor": {
+        "id": "bhc:green_heart",
+        "name": "Miniature Green Heart",
+        "type": "shapeless",
+        "slots": [
+          {
+            "item": "the_vault:gem_pog"
+          },
+          {
+            "item": "minecraft:golden_apple"
+          },
+          {
+            "item": "the_vault:vault_diamond_block"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "output": "bhc:green_heart",
+        "count": 1,
+        "experience": 0,
+        "cookingtime": 200,
+        "levels": 1,
+        "materialCost": 1,
+        "notes": "",
+        "action": "add",
+        "source": null,
+        "extra": {}
+      }
+    },
+    {
+      "id": "bhc:blue_heart",
+      "name": "Miniature Blue Heart",
+      "action": "add",
+      "sourceRecipeId": null,
+      "outputItemId": "bhc:blue_heart",
+      "itemRegistrationRequired": false,
+      "path": "data/bhc/recipes/blue_heart.json",
+      "summary": "Crafting · shapeless",
+      "notes": "",
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "item": "the_vault:echo_pog"
+          },
+          {
+            "item": "the_vault:extraordinary_larimar"
+          },
+          {
+            "item": "the_vault:extraordinary_benitoite"
+          },
+          {
+            "item": "the_vault:extraordinary_alexandrite"
+          },
+          {
+            "item": "the_vault:extraordinary_painite"
+          },
+          {
+            "item": "the_vault:extraordinary_black_opal"
+          },
+          {
+            "item": "the_vault:sour_orange"
+          }
+        ],
+        "result": {
+          "item": "bhc:blue_heart",
+          "count": 1
+        }
+      },
+      "editor": {
+        "id": "bhc:blue_heart",
+        "name": "Miniature Blue Heart",
+        "type": "shapeless",
+        "slots": [
+          {
+            "item": "the_vault:echo_pog"
+          },
+          {
+            "item": "the_vault:extraordinary_larimar"
+          },
+          {
+            "item": "the_vault:extraordinary_benitoite"
+          },
+          {
+            "item": "the_vault:extraordinary_alexandrite"
+          },
+          {
+            "item": "the_vault:extraordinary_painite"
+          },
+          {
+            "item": "the_vault:extraordinary_black_opal"
+          },
+          {
+            "item": "the_vault:sour_orange"
+          },
+          null,
+          null
+        ],
+        "output": "bhc:blue_heart",
+        "count": 1,
+        "experience": 0,
+        "cookingtime": 200,
+        "levels": 1,
+        "materialCost": 1,
+        "notes": "",
+        "action": "add",
+        "source": null,
+        "extra": {}
+      }
+    },
+    {
+      "id": "bhc:god_apple",
+      "name": "god apple",
+      "action": "replace",
+      "sourceRecipeId": "bhc:god_apple",
+      "outputItemId": "minecraft:enchanted_golden_apple",
+      "itemRegistrationRequired": false,
+      "path": "data/bhc/recipes/god_apple.json",
+      "summary": "Crafting · shaped",
+      "notes": "",
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "ABA",
+          "BCB",
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "the_vault:dreamstone"
+          },
+          "B": {
+            "tag": "forge:storage_blocks/gold"
+          },
+          "C": {
+            "item": "bhc:relic_apple"
+          }
+        },
+        "result": {
+          "item": "minecraft:enchanted_golden_apple",
+          "count": 1
+        }
+      },
+      "editor": {
+        "id": "bhc:god_apple",
+        "name": "god apple",
+        "type": "shaped",
+        "slots": [
+          {
+            "item": "the_vault:dreamstone"
+          },
+          {
+            "tag": "forge:storage_blocks/gold"
+          },
+          {
+            "item": "the_vault:dreamstone"
+          },
+          {
+            "tag": "forge:storage_blocks/gold"
+          },
+          {
+            "item": "bhc:relic_apple"
+          },
+          {
+            "tag": "forge:storage_blocks/gold"
+          },
+          {
+            "item": "the_vault:dreamstone"
+          },
+          {
+            "tag": "forge:storage_blocks/gold"
+          },
+          {
+            "item": "the_vault:dreamstone"
+          }
+        ],
+        "output": "minecraft:enchanted_golden_apple",
+        "count": 1,
+        "experience": 0,
+        "cookingtime": 200,
+        "levels": 1,
+        "materialCost": 1,
+        "notes": "",
+        "action": "replace",
+        "source": "bhc:god_apple",
+        "extra": {}
+      }
+    },
+    {
+      "id": "bhc:relic_apple",
+      "name": "relic apple",
+      "action": "replace",
+      "sourceRecipeId": "bhc:relic_apple",
+      "outputItemId": "bhc:relic_apple",
+      "itemRegistrationRequired": false,
+      "path": "data/bhc/recipes/relic_apple.json",
+      "summary": "Crafting · shaped",
+      "notes": "",
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "ABC",
+          "DED",
+          "CBA"
+        ],
+        "key": {
+          "A": {
+            "item": "the_vault:perfect_larimar"
+          },
+          "B": {
+            "tag": "forge:gems/diamond"
+          },
+          "C": {
+            "item": "the_vault:perfect_alexandrite"
+          },
+          "D": {
+            "tag": "forge:gems/emerald"
+          },
+          "E": {
+            "item": "minecraft:golden_apple"
+          }
+        },
+        "result": {
+          "item": "bhc:relic_apple",
+          "count": 1
+        }
+      },
+      "editor": {
+        "id": "bhc:relic_apple",
+        "name": "relic apple",
+        "type": "shaped",
+        "slots": [
+          {
+            "item": "the_vault:perfect_larimar"
+          },
+          {
+            "tag": "forge:gems/diamond"
+          },
+          {
+            "item": "the_vault:perfect_alexandrite"
+          },
+          {
+            "tag": "forge:gems/emerald"
+          },
+          {
+            "item": "minecraft:golden_apple"
+          },
+          {
+            "tag": "forge:gems/emerald"
+          },
+          {
+            "item": "the_vault:perfect_alexandrite"
+          },
+          {
+            "tag": "forge:gems/diamond"
+          },
+          {
+            "item": "the_vault:perfect_larimar"
+          }
+        ],
+        "output": "bhc:relic_apple",
+        "count": 1,
+        "experience": 0,
+        "cookingtime": 200,
+        "levels": 1,
+        "materialCost": 1,
+        "notes": "",
+        "action": "replace",
+        "source": "bhc:relic_apple",
+        "extra": {}
+      }
+    }
+  ],
+  "modWorkbenches": [
+    {
+      "id": "bhc",
+      "name": "Baubley Heart Canisters",
+      "version": "1.18.2-1.0.0",
+      "items": [
+        {
+          "id": "minecraft:enchanted_golden_apple",
+          "status": "recipe_saved",
+          "sourceRecipeIds": [
+            "bhc:god_apple"
+          ],
+          "savedRecipeIds": [
+            "bhc:god_apple"
+          ]
+        },
+        {
+          "id": "bhc:red_heart",
+          "status": "recipe_saved",
+          "sourceRecipeIds": [],
+          "savedRecipeIds": [
+            "bhc:red_heart"
+          ]
+        },
+        {
+          "id": "bhc:yellow_heart",
+          "status": "recipe_saved",
+          "sourceRecipeIds": [],
+          "savedRecipeIds": [
+            "bhc:yellow_heart"
+          ]
+        },
+        {
+          "id": "bhc:green_heart",
+          "status": "recipe_saved",
+          "sourceRecipeIds": [],
+          "savedRecipeIds": [
+            "bhc:green_heart"
+          ]
+        },
+        {
+          "id": "bhc:blue_heart",
+          "status": "recipe_saved",
+          "sourceRecipeIds": [],
+          "savedRecipeIds": [
+            "bhc:blue_heart"
+          ]
+        },
+        {
+          "id": "bhc:canister",
+          "status": "recipe_saved",
+          "sourceRecipeIds": [
+            "bhc:canister"
+          ],
+          "savedRecipeIds": [
+            "bhc:canister"
+          ]
+        },
+        {
+          "id": "bhc:red_heart_canister",
+          "status": "recipe_saved",
+          "sourceRecipeIds": [
+            "bhc:red_heart_canister"
+          ],
+          "savedRecipeIds": [
+            "bhc:red_heart_canister"
+          ]
+        },
+        {
+          "id": "bhc:yellow_heart_canister",
+          "status": "recipe_saved",
+          "sourceRecipeIds": [
+            "bhc:yellow_heart_canister"
+          ],
+          "savedRecipeIds": [
+            "bhc:yellow_heart_canister"
+          ]
+        },
+        {
+          "id": "bhc:green_heart_canister",
+          "status": "recipe_saved",
+          "sourceRecipeIds": [
+            "bhc:green_heart_canister"
+          ],
+          "savedRecipeIds": [
+            "bhc:green_heart_canister"
+          ]
+        },
+        {
+          "id": "bhc:blue_heart_canister",
+          "status": "recipe_saved",
+          "sourceRecipeIds": [
+            "bhc:blue_heart_canister"
+          ],
+          "savedRecipeIds": [
+            "bhc:blue_heart_canister"
+          ]
+        },
+        {
+          "id": "bhc:wither_bone",
+          "status": "needs_recipe",
+          "sourceRecipeIds": [],
+          "savedRecipeIds": []
+        },
+        {
+          "id": "bhc:relic_apple",
+          "status": "recipe_saved",
+          "sourceRecipeIds": [
+            "bhc:relic_apple"
+          ],
+          "savedRecipeIds": [
+            "bhc:relic_apple"
+          ]
+        },
+        {
+          "id": "bhc:heart_amulet",
+          "status": "recipe_saved",
+          "sourceRecipeIds": [
+            "bhc:heart_amulet"
+          ],
+          "savedRecipeIds": [
+            "bhc:heart_amulet"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+Heart Canisters issue #20 - developer verification
+Date: 2026-09-13
+Target: Remastered 2.0.4 / Minecraft 1.18.2 / Forge 40.3.11 / Java 17
+Addon SHA-256: 478c4fbab27d03f679ba29da54f5350994ee5c57fc2411af769b01e167671c86
+
+Build: Gradle build successful; JUnit results:
+dev.kpada.vhexpanded.ExperiencedXpTest: tests=5, failures=0, errors=0, skipped=0
+dev.kpada.vhexpanded.HeartContractTest: tests=4, failures=0, errors=0, skipped=0
+dev.kpada.vhexpanded.PinnedHooksTest: tests=5, failures=0, errors=0, skipped=0
+dev.kpada.vhexpanded.RepulsorBalanceTest: tests=3, failures=0, errors=0, skipped=0
+dev.kpada.vhexpanded.RepulsorIconLayoutTest: tests=1, failures=0, errors=0, skipped=0
+dev.kpada.vhexpanded.RunAwardScopeTest: tests=5, failures=0, errors=0, skipped=0
+
+Dedicated-server run: disposable expanded-smoke-world; native API checks with isolated fake player.
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: pool merge twice preserves every pool and fallback
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: research and group merges are idempotent
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: one research entry
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native QoL membership
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: research frame fits native QoL box
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: research frame does not overlap existing nodes
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: early solo research costs two
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: all other research leaves solo cost at two
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: required approved recipe pack is selected
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: exactly twelve loaded BHC recipe IDs
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded approved ingredients/pattern/output canister
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded ingredients and tags resolve canister
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native output gate covers manual and supported automation canister
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked recipe denied before result canister
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unlocked recipe permitted canister
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded approved ingredients/pattern/output heart_amulet
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded ingredients and tags resolve heart_amulet
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native output gate covers manual and supported automation heart_amulet
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked recipe denied before result heart_amulet
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unlocked recipe permitted heart_amulet
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded approved ingredients/pattern/output red_heart
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded ingredients and tags resolve red_heart
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native output gate covers manual and supported automation red_heart
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked recipe denied before result red_heart
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unlocked recipe permitted red_heart
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded approved ingredients/pattern/output yellow_heart
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded ingredients and tags resolve yellow_heart
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native output gate covers manual and supported automation yellow_heart
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked recipe denied before result yellow_heart
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unlocked recipe permitted yellow_heart
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded approved ingredients/pattern/output green_heart
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded ingredients and tags resolve green_heart
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native output gate covers manual and supported automation green_heart
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked recipe denied before result green_heart
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unlocked recipe permitted green_heart
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded approved ingredients/pattern/output blue_heart
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded ingredients and tags resolve blue_heart
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native output gate covers manual and supported automation blue_heart
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked recipe denied before result blue_heart
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unlocked recipe permitted blue_heart
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded approved ingredients/pattern/output red_heart_canister
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded ingredients and tags resolve red_heart_canister
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native output gate covers manual and supported automation red_heart_canister
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked recipe denied before result red_heart_canister
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unlocked recipe permitted red_heart_canister
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded approved ingredients/pattern/output yellow_heart_canister
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded ingredients and tags resolve yellow_heart_canister
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native output gate covers manual and supported automation yellow_heart_canister
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked recipe denied before result yellow_heart_canister
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unlocked recipe permitted yellow_heart_canister
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded approved ingredients/pattern/output green_heart_canister
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded ingredients and tags resolve green_heart_canister
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native output gate covers manual and supported automation green_heart_canister
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked recipe denied before result green_heart_canister
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unlocked recipe permitted green_heart_canister
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded approved ingredients/pattern/output blue_heart_canister
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded ingredients and tags resolve blue_heart_canister
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native output gate covers manual and supported automation blue_heart_canister
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked recipe denied before result blue_heart_canister
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unlocked recipe permitted blue_heart_canister
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded approved ingredients/pattern/output relic_apple
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded ingredients and tags resolve relic_apple
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native output gate covers manual and supported automation relic_apple
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked recipe denied before result relic_apple
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unlocked recipe permitted relic_apple
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded approved ingredients/pattern/output god_apple
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded ingredients and tags resolve god_apple
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native output gate covers manual and supported automation god_apple
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked recipe denied before result god_apple
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unlocked recipe permitted god_apple
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unrelated vanilla apple use stays available
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native miniature-heart healing is not restricted
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: ordinary red drops disabled
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: ordinary yellow drops disabled
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: ordinary green drops disabled
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: ordinary blue drops disabled
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native capacity ten per color
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native starting-health override remains disabled
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native wither-bone drops retained
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: pool and total item weights 1 / 1201
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked player's eligible set excludes BHC
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: all 1201 native weighted boundaries produce exact approved distribution
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: BHC-only eligible pool has total weight one
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: research with no pool does not dilute rewards
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: eight equal eligible pools give BHC one-eighth share
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: forced native green opening delivers exactly one heart and consumes exactly one box
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked native opening delivers no BHC reward
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: received fully loaded amulet gives locked player no benefit
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: ten canisters of color 0 add ten full hearts
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: ten canisters of color 1 add ten full hearts
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: ten canisters of color 2 add ten full hearts
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: ten canisters of color 3 add ten full hearts
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: four full colors add forty full hearts
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native per-color clamp rejects over-cap health
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: repeated native update does not duplicate health
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: wounded unequip retains five missing health points
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: amulet stacks with other additive max-health modifiers
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native Curios amulet slot supplies equipped benefit
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: empty Curios slot removes bonus
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: Curios inventory save/restore restores one bonus
+[13:45:38] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: research removal reconciles an already equipped amulet
+[13:45:38] [Server thread/INFO] [minecraft/DedicatedServer]: Heart Canisters: 101 runtime checks passed.
+[13:45:38] [Server thread/INFO] [minecraft/DedicatedServer]: Expanded runtime checks PASSED: 26
+[13:45:40] [Server thread/INFO] [minecraft/DedicatedServer]: Repulsor runtime checks PASSED: 59
+Server harness completed all three suites, saved world, and exited with code 0.
+
+Full client load-complete checks (same addon and dependencies):
+[13:51:25] [Worker-Main-19/INFO] [VH Expanded/]: Repulsor client load check PASS: eight ranks, specialization icon, owned serializer and label hook loaded
+[13:51:25] [Worker-Main-19/INFO] [VH Expanded/]: Expanded client load check PASS: summary and tracker hooks loaded; five Experienced ranks configured
+[13:51:25] [Worker-Main-19/INFO] [VH Expanded/]: Heart Canisters client load check PASS: two-point research, icon style, health and recipe hooks loaded
+
+REVISION 2 - 2026-09-13
+Addon: vh-expanded-0.1.0-heart-canisters.2.jar
+SHA-256: 3ce09819701f3c69ae8a3da3434e9d10f64df8939c7bdd1f5e69332985fac01f
+Gradle build: SUCCESS; 24 JUnit tests, zero failures.
+Layout red check reproduced staggered rows: expected [390, 440, 490], actual [415, 465, 505].
+Same test passed after aligning the three columns.
+Native source: Runner.initServer uses VAULT_GENERAL.isBlacklisted to cancel vault player interactions; TooltipEvents.addBlacklistOnTooltip uses it for the existing warning.
+Full-pack developer runtime checks:
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: vault blacklist merge preserves existing rules and does not duplicate hearts
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native vault interaction blacklist blocks bhc:red_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native heart consumption and healing retained outside vault bhc:red_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native vault interaction blacklist blocks bhc:yellow_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native heart consumption and healing retained outside vault bhc:yellow_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native vault interaction blacklist blocks bhc:green_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native heart consumption and healing retained outside vault bhc:green_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native vault interaction blacklist blocks bhc:blue_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native heart consumption and healing retained outside vault bhc:blue_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: relic apples remain usable in vaults
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: equipped amulet is not vault-blacklisted
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: existing native chorus-fruit vault restriction retained
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: pool merge twice preserves every pool and fallback
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: research and group merges are idempotent
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: one research entry
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native QoL membership
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: QoL research column 0 aligns in an evenly spaced two-row grid
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: QoL research column 1 aligns in an evenly spaced two-row grid
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: QoL research column 2 aligns in an evenly spaced two-row grid
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: research frame fits native QoL box
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: research frame does not overlap existing nodes
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: early solo research costs two
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: all other research leaves solo cost at two
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: required approved recipe pack is selected
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: exactly twelve loaded BHC recipe IDs
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded approved ingredients/pattern/output canister
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded ingredients and tags resolve canister
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native output gate covers manual and supported automation canister
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked recipe denied before result canister
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unlocked recipe permitted canister
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded approved ingredients/pattern/output heart_amulet
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded ingredients and tags resolve heart_amulet
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native output gate covers manual and supported automation heart_amulet
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked recipe denied before result heart_amulet
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unlocked recipe permitted heart_amulet
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded approved ingredients/pattern/output red_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded ingredients and tags resolve red_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native output gate covers manual and supported automation red_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked recipe denied before result red_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unlocked recipe permitted red_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded approved ingredients/pattern/output yellow_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded ingredients and tags resolve yellow_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native output gate covers manual and supported automation yellow_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked recipe denied before result yellow_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unlocked recipe permitted yellow_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded approved ingredients/pattern/output green_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded ingredients and tags resolve green_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native output gate covers manual and supported automation green_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked recipe denied before result green_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unlocked recipe permitted green_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded approved ingredients/pattern/output blue_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded ingredients and tags resolve blue_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native output gate covers manual and supported automation blue_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked recipe denied before result blue_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unlocked recipe permitted blue_heart
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded approved ingredients/pattern/output red_heart_canister
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded ingredients and tags resolve red_heart_canister
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native output gate covers manual and supported automation red_heart_canister
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked recipe denied before result red_heart_canister
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unlocked recipe permitted red_heart_canister
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded approved ingredients/pattern/output yellow_heart_canister
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded ingredients and tags resolve yellow_heart_canister
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native output gate covers manual and supported automation yellow_heart_canister
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked recipe denied before result yellow_heart_canister
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unlocked recipe permitted yellow_heart_canister
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded approved ingredients/pattern/output green_heart_canister
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded ingredients and tags resolve green_heart_canister
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native output gate covers manual and supported automation green_heart_canister
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked recipe denied before result green_heart_canister
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unlocked recipe permitted green_heart_canister
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded approved ingredients/pattern/output blue_heart_canister
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded ingredients and tags resolve blue_heart_canister
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native output gate covers manual and supported automation blue_heart_canister
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked recipe denied before result blue_heart_canister
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unlocked recipe permitted blue_heart_canister
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded approved ingredients/pattern/output relic_apple
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded ingredients and tags resolve relic_apple
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native output gate covers manual and supported automation relic_apple
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked recipe denied before result relic_apple
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unlocked recipe permitted relic_apple
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded approved ingredients/pattern/output god_apple
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: loaded ingredients and tags resolve god_apple
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native output gate covers manual and supported automation god_apple
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked recipe denied before result god_apple
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unlocked recipe permitted god_apple
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: unrelated vanilla apple use stays available
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native miniature-heart healing is not restricted
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: ordinary red drops disabled
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: ordinary yellow drops disabled
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: ordinary green drops disabled
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: ordinary blue drops disabled
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native capacity ten per color
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native starting-health override remains disabled
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native wither-bone drops retained
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: pool and total item weights 1 / 1201
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked player's eligible set excludes BHC
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: all 1201 native weighted boundaries produce exact approved distribution
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: BHC-only eligible pool has total weight one
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: research with no pool does not dilute rewards
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: eight equal eligible pools give BHC one-eighth share
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: forced native green opening delivers exactly one heart and consumes exactly one box
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: locked native opening delivers no BHC reward
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: received fully loaded amulet gives locked player no benefit
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: ten canisters of color 0 add ten full hearts
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: ten canisters of color 1 add ten full hearts
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: ten canisters of color 2 add ten full hearts
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: ten canisters of color 3 add ten full hearts
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: four full colors add forty full hearts
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native per-color clamp rejects over-cap health
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: repeated native update does not duplicate health
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: wounded unequip retains five missing health points
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: amulet stacks with other additive max-health modifiers
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: native Curios amulet slot supplies equipped benefit
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: empty Curios slot removes bonus
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: Curios inventory save/restore restores one bonus
+[15:20:32] [Server thread/INFO] [VH Expanded/]: Heart Canisters runtime PASS: research removal reconciles an already equipped amulet
+[15:20:32] [Server thread/INFO] [minecraft/DedicatedServer]: Heart Canisters: 116 runtime checks passed.
+[15:20:32] [Server thread/INFO] [minecraft/DedicatedServer]: Expanded runtime checks PASSED: 26
+[15:20:33] [Server thread/INFO] [minecraft/DedicatedServer]: Repulsor runtime checks PASSED: 59

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "the_vault:gem_pog"
+    },
+    {
+      "item": "minecraft:golden_apple"
+    },
+    {
+      "item": "the_vault:vault_diamond_block"
+    }
+  ],
+  "result": {
+    "item": "bhc:green_heart",
+    "count": 1
+  }
+}

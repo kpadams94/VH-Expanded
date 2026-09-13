@@ -1,0 +1,44 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="vhexpanded"
+version="${file.jarVersion}"
+displayName="Vault Hunters Expanded"
+description='''Heart Canisters research and progression, Repulsor specialization, and Experienced vault-run XP expertise.'''
+
+[[dependencies.vhexpanded]]
+modId="forge"
+mandatory=true
+versionRange="[40.3.11]"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.vhexpanded]]
+modId="bhc"
+mandatory=true
+versionRange="[1.18.2-1.0.0]"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.vhexpanded]]
+modId="curios"
+mandatory=true
+versionRange="[1.18.2-5.0.9.2]"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.vhexpanded]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.18.2]"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.vhexpanded]]
+modId="the_vault"
+mandatory=true
+versionRange="[1.18.2-20.0.3-remastered.6872]"
+ordering="AFTER"
+side="BOTH"

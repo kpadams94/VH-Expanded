@@ -1,0 +1,74 @@
+VH Expanded 0.1.0-repulsor.2 verification - September 13, 2026
+Target: Remastered 2.0.4, Minecraft 1.18.2, Forge 40.3.11, Java 17
+Addon SHA-256: d60a4ef6e2d8a93c9952c4a16ea15e78e895c9c039a377a1dcc63eb57b6e777f
+Build: SUCCESSFUL. 18 automated tests, 0 failures.
+Final dedicated pack runtime: 59 Repulsor checks; 26 Experienced checks.
+Runtime command reload also succeeded. Native player retuning is exercised on a temporary fake player, including learned-state/cooldown/mana preservation.
+
+[11:42:24] [Server thread/INFO] [minecraft/DedicatedServer]: Done (12.772s)! For help, type "help"
+[11:42:25] [Server thread/INFO] [minecraft/DedicatedServer]: Repulsor tuning reloaded for 0 online player(s). Reopen the ability menu. Existing barriers and running cooldowns keep their original timing.
+[11:42:25] [Server thread/INFO] [minecraft/DedicatedServer]: Expanded runtime checks PASSED: 26
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: config merge twice is idempotent; original family retained
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: both native family choices survive
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: normal purchase rank 1
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: normal purchase rank 2
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: normal purchase rank 3
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: normal purchase rank 4
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: normal purchase rank 5
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: normal purchase rank 6
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: normal purchase rank 7
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: normal purchase rank 8
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: eight ranks spend eight points, ninth unavailable
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native serialized row L1
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native serialized row L3
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native serialized row L4
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native serialized row L7
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native serialized row L8
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native serialized row L12
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native serialized row L15
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native serialized row L16
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native serialized row L17
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native serialized row L20
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native serialized row L31
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native serialized row L64
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native NBT keeps owned type and rank
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native network keeps owned type and rank
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: network retains distinct barrier and repel radii
+[11:42:25] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: previous-version saved ability remains readable before config merge
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: copy retains dynamic overlevel type
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native refund removes rank and returns eight points
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: icon lookup registered
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native ability group inherited
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: half-block rank changes collision geometry
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: pulse destination clears cube including target width
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: pulse destination clears cube including target width
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: pulse destination clears cube including target width
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: overlap ownership round trips through block NBT
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: older expiry preserves newer collision
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: final expiry clears collision
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: owner cleanup removes all owned contributions
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: insufficient mana produces no pulse or barrier
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor cast 83c8fa40-e9e3-4921-97db-98b457a88940: barrier radius 2.5, repel radius 4.5, duration 30 ticks, cleared 2, resistant/obstructed 1, cells 98
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: real cast clears near and edge mobs in open space
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: real pulse adds no damage
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native full knockback resistance preserved
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: successful rank-eight cast pays 29 mana once
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: cooldown begins immediately with no barrier delay
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: cooldown rejects a second charge
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: ordinary player-owned minecraft:arrow blocked
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: ordinary player-owned minecraft:snowball blocked
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: player/ability minecraft:player passes
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: player/ability the_vault:thrown_javelin passes
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: player/ability the_vault:fireball passes
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: real barrier cell physically collides with mobs
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: rank-eight barrier ends at 2.5 while repel still clears to 4.5
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: live retuning changes future cast values on existing ability objects
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: live retuning preserves purchased rank, specialization, running cooldown and mana
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: live retuning leaves existing barrier geometry and expiry intact
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: moving caster leaves the barrier in place
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: real native gear grants nine overlevels to purchased rank eight
+[11:42:26] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: real native 80 percent CDR reduces L17 to 16 ticks
+[11:42:26] [Server thread/INFO] [minecraft/DedicatedServer]: Repulsor runtime checks PASSED: 59
+[11:47:39] [Worker-Main-14/INFO] [VH Expanded/]: Repulsor client load check PASS: eight ranks, specialization icon, owned serializer and label hook loaded
+[11:47:39] [Worker-Main-14/INFO] [VH Expanded/]: Expanded client load check PASS: summary and tracker hooks loaded; five Experienced ranks configured
+Icon export verified: transparent 32 x 32 PNG. Native atlas namespace/path inspected. Interactive appearance and F3+T acceptance remain for the player.

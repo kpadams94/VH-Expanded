@@ -1,0 +1,20 @@
+Repulsor revision 3 - icon alignment correction, September 13, 2026
+
+Pinned AbilityWidgetSelectable render method translates (-8,-8) before native-size icon blit.
+Native Mana Barrier, Mega Jump knockback and Nova icons are 16x16.
+Faulty Repulsor export was 32x32: visual size doubled, center shifted (+8,+8) GUI pixels.
+
+Red: RepulsorIconLayoutTest failed with expected width 16, actual 32.
+Green: same test passes after exporting the unchanged generated art to 16x16.
+Full suite: 19 tests, 0 failures.
+All 45 packaged main class files are byte-identical to revision 2.
+Standalone ZIP contains only pack metadata and the icon; embedded PNG verified 16x16.
+In-game visual confirmation remains for the player after resource reload.
+
+Revision-3 addon SHA-256:
+b955c454c44f4f5ceef09e9e82334fb7a7d64428b69000c3d808d3de464f079f
+Standalone vh-expanded-repulsor-icon-fix.zip SHA-256:
+4e43f585836fb61766099ee9725e48d3c79a1e03c8c3012ded373ca1d4539690
+
+Install the standalone ZIP through Options > Resource Packs, above older visual packs.
+Click Done to reload resources, or F3+T after updating an enabled pack. Keep the revision-2 jar.

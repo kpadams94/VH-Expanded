@@ -1,0 +1,99 @@
+VH Expanded 0.1.0-repulsor.1 verification — September 13, 2026
+Target: Remastered 2.0.4, Minecraft 1.18.2, Forge 40.3.11, Temurin Java 17.0.17+10
+Addon SHA-256: ed6cf0d42b7336deab53e8822c98ab278c4441d9c4b2f54f1f4809d629dd4cef
+Vault SHA-256: fc6adfeb76071d61e633027334fc95e8efb7faf8a4cb57d646f8176b4f75390b
+
+gradlew.bat build --no-daemon: BUILD SUCCESSFUL
+ExperiencedXpTest: 5 tests, 0 failures, 0 errors
+RunAwardScopeTest: 5 tests, 0 failures, 0 errors
+PinnedHooksTest: 5 tests, 0 failures, 0 errors
+RepulsorBalanceTest: 2 tests, 0 failures, 0 errors
+Total: 17 tests, 0 failures, 0 errors
+Packaged jar: 63 entries; 0 embedded iskallia/Vault classes; owned block and balance resource present.
+
+Final packaged runtime log excerpts follow.
+[02:01:36] [Server thread/INFO] [minecraft/DedicatedServer]: Done (12.704s)! For help, type "help"
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: config merge is idempotent
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: five native ranks
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: rank 1 purchasable for one point
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: rank 2 purchasable for one point
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: rank 3 purchasable for one point
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: rank 4 purchasable for one point
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: rank 5 purchasable for one point
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: five points spent; sixth rank unavailable
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: rank survives native NBT serialization
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: rank survives native network serialization
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native regret resets rank and refunds five points
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native award rank 0
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native award rank 1
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native award rank 2
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native award rank 3
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native award rank 4
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native award rank 5
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native global +100% then Experienced +50% gives 3000
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native fractional final bonus floors to 151
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native zero stays zero
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: ordinary helper outside run receives no bonus
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native player XP NBT agrees with awarded XP
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native cap discards award
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: orb test character has Experienced rank five
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: rank-five orb handler leaves seven XP unchanged
+[02:01:37] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: historical receipt NBT round trip
+[02:01:37] [Server thread/INFO] [minecraft/DedicatedServer]: Expanded runtime checks PASSED: 26
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: config merge twice is idempotent; original family retained
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: both native family choices survive
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: normal purchase rank 1
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: normal purchase rank 2
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: normal purchase rank 3
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: normal purchase rank 4
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: normal purchase rank 5
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: normal purchase rank 6
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: normal purchase rank 7
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: normal purchase rank 8
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: eight ranks spend eight points, ninth unavailable
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native serialized row L1
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native serialized row L3
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native serialized row L4
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native serialized row L7
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native serialized row L8
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native serialized row L12
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native serialized row L15
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native serialized row L16
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native serialized row L17
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native serialized row L20
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native serialized row L31
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native serialized row L64
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native NBT keeps owned type and rank
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native network keeps owned type and rank
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: copy retains dynamic overlevel type
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native refund removes rank and returns eight points
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: icon lookup registered
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native ability group inherited
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: half-block rank changes collision geometry
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: pulse destination clears cube including target width
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: pulse destination clears cube including target width
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: pulse destination clears cube including target width
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: overlap ownership round trips through block NBT
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: older expiry preserves newer collision
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: final expiry clears collision
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: owner cleanup removes all owned contributions
+[02:01:38] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: insufficient mana produces no pulse or barrier
+[02:01:39] [Server thread/INFO] [VH Expanded/]: Repulsor cast 5f259756-b7c8-4926-8376-692b2e729a7d: radius 4.5, duration 30 ticks, cleared 2, resistant/obstructed 1, cells 386
+[02:01:39] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: real cast clears near and edge mobs in open space
+[02:01:39] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: real pulse adds no damage
+[02:01:39] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: native full knockback resistance preserved
+[02:01:39] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: successful rank-eight cast pays 36 mana once
+[02:01:39] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: cooldown begins immediately with no barrier delay
+[02:01:39] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: cooldown rejects a second charge
+[02:01:39] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: ordinary player-owned minecraft:arrow blocked
+[02:01:39] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: ordinary player-owned minecraft:snowball blocked
+[02:01:39] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: player/ability minecraft:player passes
+[02:01:39] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: player/ability the_vault:thrown_javelin passes
+[02:01:39] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: player/ability the_vault:fireball passes
+[02:01:39] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: real barrier cell physically collides with mobs
+[02:01:39] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: moving caster leaves the barrier in place
+[02:01:39] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: real native gear grants nine overlevels to purchased rank eight
+[02:01:39] [Server thread/INFO] [VH Expanded/]: Repulsor runtime PASS: real native 80 percent CDR reduces L17 to 16 ticks
+[02:01:39] [Server thread/INFO] [minecraft/DedicatedServer]: Repulsor runtime checks PASSED: 53
+[02:00:58] [Worker-Main-18/INFO] [VH Expanded/]: Repulsor client load check PASS: eight ranks, specialization icon, owned serializer and label hook loaded
+[02:00:58] [Worker-Main-18/INFO] [VH Expanded/]: Expanded client load check PASS: summary and tracker hooks loaded; five Experienced ranks configured

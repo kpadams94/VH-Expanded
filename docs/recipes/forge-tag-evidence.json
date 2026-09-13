@@ -1,0 +1,59 @@
+[
+  {
+    "tag": "forge:string",
+    "blobSha": "90efbd859419749de30dff6b8bc49943401178c7",
+    "source": "https://github.com/MinecraftForge/MinecraftForge/blob/1.18.x/src/generated/resources/data/forge/tags/items/string.json",
+    "json": {
+      "replace": false,
+      "values": [
+        "minecraft:string"
+      ]
+    }
+  },
+  {
+    "tag": "forge:glass",
+    "blobSha": "943aa90b5da9967548b88a611c6dba255422094d",
+    "source": "https://github.com/MinecraftForge/MinecraftForge/blob/1.18.x/src/generated/resources/data/forge/tags/items/glass.json",
+    "json": {
+      "replace": false,
+      "values": [
+        "#forge:glass/colorless",
+        "#forge:stained_glass",
+        "#forge:glass/tinted"
+      ]
+    }
+  },
+  {
+    "tag": "forge:gems/diamond",
+    "blobSha": "a0b7317d86acc654a185d3ce4f7403c8573fd45e",
+    "source": "https://github.com/MinecraftForge/MinecraftForge/blob/1.18.x/src/generated/resources/data/forge/tags/items/gems/diamond.json",
+    "json": {
+      "replace": false,
+      "values": [
+        "minecraft:diamond"
+      ]
+    }
+  },
+  {
+    "tag": "forge:gems/emerald",
+    "blobSha": "838caf0bd9436f1e7ff4bbb79e613a82aa83a69c",
+    "source": "https://github.com/MinecraftForge/MinecraftForge/blob/1.18.x/src/generated/resources/data/forge/tags/items/gems/emerald.json",
+    "json": {
+      "replace": false,
+      "values": [
+        "minecraft:emerald"
+      ]
+    }
+  },
+  {
+    "tag": "forge:storage_blocks/gold",
+    "blobSha": "863d47ad21ccb670d8984d447891d06ab03b1b68",
+    "source": "https://github.com/MinecraftForge/MinecraftForge/blob/1.18.x/src/generated/resources/data/forge/tags/items/storage_blocks/gold.json",
+    "json": {
+      "replace": false,
+      "values": [
+        "minecraft:gold_block"
+      ]
+    }
+  }
+]

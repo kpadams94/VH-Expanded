@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "the_vault:echo_pog"
+    },
+    {
+      "item": "the_vault:extraordinary_larimar"
+    },
+    {
+      "item": "the_vault:extraordinary_benitoite"
+    },
+    {
+      "item": "the_vault:extraordinary_alexandrite"
+    },
+    {
+      "item": "the_vault:extraordinary_painite"
+    },
+    {
+      "item": "the_vault:extraordinary_black_opal"
+    },
+    {
+      "item": "the_vault:sour_orange"
+    }
+  ],
+  "result": {
+    "item": "bhc:blue_heart",
+    "count": 1
+  }
+}

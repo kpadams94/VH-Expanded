@@ -1,0 +1,61 @@
+Packaged addon SHA-256: 9b00a4ecaacbba1641cb19da1bec65b90ee0b24310aabe5ad6514271e6d76e57
+Selected unedited log lines from the final packaged runtime tests:
+[12Sep2026 23:36:21.885] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (11.228s)! For help, type "help"
+[12Sep2026 23:36:34.675] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: config merge is idempotent
+[12Sep2026 23:36:34.678] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: five native ranks
+[12Sep2026 23:36:34.680] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: rank 1 purchasable for one point
+[12Sep2026 23:36:34.681] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: rank 2 purchasable for one point
+[12Sep2026 23:36:34.681] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: rank 3 purchasable for one point
+[12Sep2026 23:36:34.681] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: rank 4 purchasable for one point
+[12Sep2026 23:36:34.681] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: rank 5 purchasable for one point
+[12Sep2026 23:36:34.681] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: five points spent; sixth rank unavailable
+[12Sep2026 23:36:34.693] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: rank survives native NBT serialization
+[12Sep2026 23:36:34.696] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: rank survives native network serialization
+[12Sep2026 23:36:34.696] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native regret resets rank and refunds five points
+[12Sep2026 23:36:34.706] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native award rank 0
+[12Sep2026 23:36:34.706] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native award rank 1
+[12Sep2026 23:36:34.706] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native award rank 2
+[12Sep2026 23:36:34.707] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native award rank 3
+[12Sep2026 23:36:34.707] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native award rank 4
+[12Sep2026 23:36:34.707] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native award rank 5
+[12Sep2026 23:36:34.707] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native global +100% then Experienced +50% gives 3000
+[12Sep2026 23:36:34.708] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native fractional final bonus floors to 151
+[12Sep2026 23:36:34.708] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native zero stays zero
+[12Sep2026 23:36:34.709] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: ordinary helper outside run receives no bonus
+[12Sep2026 23:36:34.709] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native player XP NBT agrees with awarded XP
+[12Sep2026 23:36:34.709] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native cap discards award
+[12Sep2026 23:36:34.778] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: orb test character has Experienced rank five
+[12Sep2026 23:36:34.778] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: rank-five orb handler leaves seven XP unchanged
+[12Sep2026 23:36:34.780] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: historical receipt NBT round trip
+[12Sep2026 23:36:34.780] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Expanded runtime checks PASSED: 26
+[12Sep2026 23:36:46.029] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [23:36:46 12-09] Configs reloaded!
+[12Sep2026 23:37:28.611] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: config merge is idempotent
+[12Sep2026 23:37:28.617] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: five native ranks
+[12Sep2026 23:37:28.617] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: rank 1 purchasable for one point
+[12Sep2026 23:37:28.618] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: rank 2 purchasable for one point
+[12Sep2026 23:37:28.618] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: rank 3 purchasable for one point
+[12Sep2026 23:37:28.618] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: rank 4 purchasable for one point
+[12Sep2026 23:37:28.618] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: rank 5 purchasable for one point
+[12Sep2026 23:37:28.618] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: five points spent; sixth rank unavailable
+[12Sep2026 23:37:28.620] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: rank survives native NBT serialization
+[12Sep2026 23:37:28.621] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: rank survives native network serialization
+[12Sep2026 23:37:28.621] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native regret resets rank and refunds five points
+[12Sep2026 23:37:28.623] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native award rank 0
+[12Sep2026 23:37:28.623] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native award rank 1
+[12Sep2026 23:37:28.624] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native award rank 2
+[12Sep2026 23:37:28.624] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native award rank 3
+[12Sep2026 23:37:28.624] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native award rank 4
+[12Sep2026 23:37:28.624] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native award rank 5
+[12Sep2026 23:37:28.624] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native global +100% then Experienced +50% gives 3000
+[12Sep2026 23:37:28.625] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native fractional final bonus floors to 151
+[12Sep2026 23:37:28.625] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native zero stays zero
+[12Sep2026 23:37:28.625] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: ordinary helper outside run receives no bonus
+[12Sep2026 23:37:28.625] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native player XP NBT agrees with awarded XP
+[12Sep2026 23:37:28.626] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: native cap discards award
+[12Sep2026 23:37:28.627] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: orb test character has Experienced rank five
+[12Sep2026 23:37:28.627] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: rank-five orb handler leaves seven XP unchanged
+[12Sep2026 23:37:28.628] [Server thread/INFO] [VH Expanded/]: Expanded runtime PASS: historical receipt NBT round trip
+[12Sep2026 23:37:28.628] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Expanded runtime checks PASSED: 26
+[23:35:38] [Worker-Main-8/INFO] [VH Expanded/]: Expanded client load check PASS: summary and tracker hooks loaded; five Experienced ranks configured
+[23:36:35] [Render thread/INFO] [de.ke.fa.cu.la.ScreenCustomizationLayerHandler/]: [FANCYMENU] Minecraft resource reload: FINISHED
+[23:36:35] [Render thread/INFO] [de.ke.fa.cu.la.ScreenCustomizationLayerHandler/]: [FANCYMENU] ScreenCustomizationLayer registered: shadows.packmenu.ExtendedMenuScreen

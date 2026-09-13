@@ -1,0 +1,8 @@
+{
+  "ability.vhexpanded.repulsor.description": "%s nearby mobs in a %s around yourself and summon a stationary %s for a %s. Mobs and ordinary projectiles cannot pass through, but you and your abilities can!",
+  "ability.vhexpanded.repulsor.repel": "Repel",
+  "ability.vhexpanded.repulsor.radius": "radius",
+  "ability.vhexpanded.repulsor.cube": "Mana Cube",
+  "ability.vhexpanded.repulsor.duration": "duration of time",
+  "ability.vhexpanded.repulsor.cast": "\u2734 Cast Ability"
+}

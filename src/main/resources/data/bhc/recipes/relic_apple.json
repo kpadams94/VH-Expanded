@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABC",
+    "DED",
+    "CBA"
+  ],
+  "key": {
+    "A": {
+      "item": "the_vault:perfect_larimar"
+    },
+    "B": {
+      "tag": "forge:gems/diamond"
+    },
+    "C": {
+      "item": "the_vault:perfect_alexandrite"
+    },
+    "D": {
+      "tag": "forge:gems/emerald"
+    },
+    "E": {
+      "item": "minecraft:golden_apple"
+    }
+  },
+  "result": {
+    "item": "bhc:relic_apple",
+    "count": 1
+  }
+}

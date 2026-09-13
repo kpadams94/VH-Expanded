@@ -1,0 +1,10 @@
+{
+  "tiers": [
+    {"type":"experience","increasedExpPercentage":0.1,"learnPointCost":1,"regretPointCost":0,"unlockLevel":0},
+    {"type":"experience","increasedExpPercentage":0.2,"learnPointCost":1,"regretPointCost":0,"unlockLevel":0},
+    {"type":"experience","increasedExpPercentage":0.3,"learnPointCost":1,"regretPointCost":0,"unlockLevel":0},
+    {"type":"experience","increasedExpPercentage":0.4,"learnPointCost":1,"regretPointCost":0,"unlockLevel":0},
+    {"type":"experience","increasedExpPercentage":0.5,"learnPointCost":1,"regretPointCost":0,"unlockLevel":0}
+  ],
+  "maxLearnableTier": 5
+}

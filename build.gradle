@@ -1,0 +1,115 @@
+plugins {
+    id 'java'
+    id 'net.minecraftforge.gradle' version '6.0.54'
+}
+
+group = 'dev.kpada.vhexpanded'
+version = '0.1.0'
+base.archivesName = 'vh-expanded'
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+minecraft {
+    mappings channel: 'official', version: '1.18.2'
+}
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://www.cursemaven.com' }
+    maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
+}
+
+configurations { pinnedVault; pinnedBhc; pinnedCurios }
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.18.2-40.3.11'
+    implementation fg.deobf('curse.maven:vault-hunters-official-mod-458203:8502584')
+    implementation fg.deobf('curse.maven:baubley-heart-canisters-282947:3772892')
+    implementation fg.deobf('curse.maven:curios-309927:4985315')
+    pinnedVault 'curse.maven:vault-hunters-official-mod-458203:8502584'
+    pinnedBhc 'curse.maven:baubley-heart-canisters-282947:3772892'
+    pinnedCurios 'curse.maven:curios-309927:4985315'
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.3'
+    testImplementation 'org.ow2.asm:asm-tree:9.7'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+// A unique resource location lets runtime checks distinguish approved JSON from BHC's same-ID originals.
+sourceSets.main.resources.exclude('data/bhc/recipes/**')
+processResources {
+    from('src/main/resources/data/bhc/recipes') { into 'vhexpanded/hearts/recipes' }
+    from('src/main/resources/data') { include 'bhc/recipes/**'; into 'vhexpanded/heart-recipes/data' }
+}
+test {
+    useJUnitPlatform()
+    doFirst {
+        systemProperty 'vaultJar', project.findProperty('vaultJar') ?: configurations.pinnedVault.singleFile.absolutePath
+        systemProperty 'bhcJar', configurations.pinnedBhc.singleFile.absolutePath
+        systemProperty 'curiosJar', configurations.pinnedCurios.singleFile.absolutePath
+    }
+}
+jar {
+    manifest.attributes('MixinConfigs': 'vhexpanded.mixins.json',
+            'Implementation-Version': project.version)
+    finalizedBy 'reobfJar'
+}
+tasks.withType(AbstractArchiveTask).configureEach {
+    preserveFileTimestamps = false
+    reproducibleFileOrder = true
+}
+
+def handoffDir = layout.buildDirectory.dir('release')
+tasks.register('stageRelease', Sync) {
+    dependsOn 'build'
+    into handoffDir
+    from(tasks.jar) { into 'mods' }
+    from('docs/INSTALL.md') { rename { 'START-HERE.md' } }
+    from('CHANGELOG.md')
+    from('docs/RELEASE-0.1.0.md') { rename { 'RELEASE.md' } }
+    from('docs/heart-canisters-compatibility.md') { rename { 'COMPATIBILITY.md' } }
+    from('docs/heart-canisters-test-evidence.md') { rename { 'TEST-EVIDENCE.md' } }
+    from('pack-overlay')
+    from('docs/recipes/heart-canisters') { include 'source-export.json', 'recipe-appendix.md', 'VERIFICATION.md', 'mod-box-fragment.json'; into 'recipes' }
+    from('docs') { include 'repulsor-*.md'; into 'repulsor' }
+    from('docs/evidence/heart-canisters-runtime-checks.txt') { into 'evidence' }
+    from('docs/evidence/repulsor-runtime-checks.txt') { into 'evidence' }
+    from('docs/evidence/repulsor-icon-fix-checks.txt') { into 'evidence' }
+    from('docs') { include 'experienced-*.md'; into 'experienced' }
+    from('docs/evidence/experienced-runtime-checks.txt') { into 'experienced/evidence' }
+    from('src/main/resources/vhexpanded/repulsor.json') {
+        into 'optional-config'
+        rename { 'vhexpanded-repulsor.json' }
+    }
+    from('packaging/repulsor-visuals') { into 'resourcepacks/VHExpanded-Repulsor-Visuals' }
+    from('src/main/resources/assets/vhexpanded') {
+        include 'lang/**'
+        into 'resourcepacks/VHExpanded-Repulsor-Visuals/assets/vhexpanded'
+    }
+    from('src/main/resources/assets/the_vault') {
+        include 'textures/gui/abilities/vhexpanded_repulsor.png'
+        into 'resourcepacks/VHExpanded-Repulsor-Visuals/assets/the_vault'
+    }
+}
+tasks.register('releaseChecksums') {
+    dependsOn 'stageRelease'
+    doLast {
+        def dir = handoffDir.get().asFile
+        def lines = fileTree(dir).files.findAll { it.name != 'SHA256SUMS.txt' }.sort { it.path }.collect { f ->
+            def hash = java.security.MessageDigest.getInstance('SHA-256').digest(f.bytes).encodeHex()
+            "${hash}  ${dir.toPath().relativize(f.toPath()).toString().replace('\\', '/')}"
+        }
+        new File(dir, 'SHA256SUMS.txt').text = lines.join('\n') + '\n'
+    }
+}
+tasks.register('releaseBundle', Zip) {
+    dependsOn 'releaseChecksums'
+    archiveFileName = "vault-hunters-expanded-${project.version}.zip"
+    destinationDirectory = layout.buildDirectory.dir('distributions')
+    from handoffDir
+}
+
+// Retain the old developer entrypoint without producing a slice-named release.
+tasks.register('playtestBundle') {
+    dependsOn 'releaseBundle'
+}

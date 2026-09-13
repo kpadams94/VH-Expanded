@@ -1,0 +1,15 @@
+{
+  "radiusBase": 1.0,
+  "radiusPerLevel": 0.5,
+  "barrierRadiusBase": 1.0,
+  "barrierRadiusStep": 0.5,
+  "barrierEveryLevels": 2,
+  "durationBaseTicks": 10,
+  "durationStepTicks": 10,
+  "durationEveryLevels": 4,
+  "cooldownInterceptTicks": 420,
+  "cooldownPerLevelTicks": 20,
+  "cooldownFloorTicks": 80,
+  "manaBase": 15.0,
+  "manaPerLevel": 2.0
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "A A",
+    "BCB",
+    " B "
+  ],
+  "key": {
+    "A": {
+      "tag": "forge:string"
+    },
+    "B": {
+      "tag": "forge:glass"
+    },
+    "C": {
+      "item": "the_vault:gem_pog"
+    }
+  },
+  "result": {
+    "item": "bhc:heart_amulet",
+    "count": 1
+  }
+}

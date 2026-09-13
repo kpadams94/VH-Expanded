@@ -1,0 +1,262 @@
+{
+  "sourceFilename": "source-export.json",
+  "sha256": "8acdaca7d8e9e1a0e0f84b147e86d987558693176bb51370da00c8cd2210aec7",
+  "recipeCount": 12,
+  "replacements": 8,
+  "additions": 4,
+  "errors": [],
+  "warnings": [
+    "Static catalogs corroborate IDs; runtime registries, tag membership, research gating and final recipe-manager load order still require an in-game check."
+  ],
+  "usedItems": [
+    "bhc:blue_heart",
+    "bhc:blue_heart_canister",
+    "bhc:canister",
+    "bhc:green_heart",
+    "bhc:green_heart_canister",
+    "bhc:heart_amulet",
+    "bhc:red_heart",
+    "bhc:red_heart_canister",
+    "bhc:relic_apple",
+    "bhc:yellow_heart",
+    "bhc:yellow_heart_canister",
+    "minecraft:apple",
+    "minecraft:enchanted_golden_apple",
+    "minecraft:golden_apple",
+    "minecraft:golden_carrot",
+    "minecraft:nether_star",
+    "minecraft:netherite_block",
+    "the_vault:black_chromatic_steel_ingot",
+    "the_vault:chromatic_iron_ingot",
+    "the_vault:chromatic_steel_ingot",
+    "the_vault:dreamstone",
+    "the_vault:echo_pog",
+    "the_vault:echoing_ingot",
+    "the_vault:extraordinary_alexandrite",
+    "the_vault:extraordinary_benitoite",
+    "the_vault:extraordinary_black_opal",
+    "the_vault:extraordinary_larimar",
+    "the_vault:extraordinary_painite",
+    "the_vault:gem_pog",
+    "the_vault:perfect_alexandrite",
+    "the_vault:perfect_larimar",
+    "the_vault:sour_orange",
+    "the_vault:vault_diamond_block",
+    "the_vault:vault_essence",
+    "the_vault:vault_meat",
+    "the_vault:vault_meat_block"
+  ],
+  "usedTags": [
+    "forge:gems/diamond",
+    "forge:gems/emerald",
+    "forge:glass",
+    "forge:storage_blocks/gold",
+    "forge:string"
+  ],
+  "relevantPackSources": [],
+  "rows": [
+    {
+      "id": "bhc:canister",
+      "action": "replace",
+      "path": "data/bhc/recipes/canister.json",
+      "output": {
+        "item": "bhc:canister",
+        "count": 1
+      },
+      "ingredients": {
+        "the_vault:chromatic_iron_ingot": 4,
+        "the_vault:perfect_larimar": 1
+      },
+      "pattern": [
+        " A ",
+        "ABA",
+        " A "
+      ]
+    },
+    {
+      "id": "bhc:red_heart",
+      "action": "add",
+      "path": "data/bhc/recipes/red_heart.json",
+      "output": {
+        "item": "bhc:red_heart",
+        "count": 1
+      },
+      "ingredients": {
+        "the_vault:vault_essence": 1,
+        "minecraft:apple": 1,
+        "the_vault:vault_meat": 1
+      },
+      "pattern": null
+    },
+    {
+      "id": "bhc:red_heart_canister",
+      "action": "replace",
+      "path": "data/bhc/recipes/red_heart_canister.json",
+      "output": {
+        "item": "bhc:red_heart_canister",
+        "count": 1
+      },
+      "ingredients": {
+        "bhc:red_heart": 1,
+        "bhc:canister": 1,
+        "the_vault:chromatic_iron_ingot": 1
+      },
+      "pattern": null
+    },
+    {
+      "id": "bhc:yellow_heart_canister",
+      "action": "replace",
+      "path": "data/bhc/recipes/yellow_heart_canister.json",
+      "output": {
+        "item": "bhc:yellow_heart_canister",
+        "count": 1
+      },
+      "ingredients": {
+        "bhc:yellow_heart": 1,
+        "bhc:red_heart_canister": 1,
+        "the_vault:chromatic_steel_ingot": 1
+      },
+      "pattern": null
+    },
+    {
+      "id": "bhc:green_heart_canister",
+      "action": "replace",
+      "path": "data/bhc/recipes/green_heart_canister.json",
+      "output": {
+        "item": "bhc:green_heart_canister",
+        "count": 1
+      },
+      "ingredients": {
+        "bhc:green_heart": 1,
+        "bhc:yellow_heart_canister": 1,
+        "the_vault:black_chromatic_steel_ingot": 1,
+        "minecraft:nether_star": 1
+      },
+      "pattern": null
+    },
+    {
+      "id": "bhc:blue_heart_canister",
+      "action": "replace",
+      "path": "data/bhc/recipes/blue_heart_canister.json",
+      "output": {
+        "item": "bhc:blue_heart_canister",
+        "count": 1
+      },
+      "ingredients": {
+        "bhc:blue_heart": 1,
+        "bhc:green_heart_canister": 1,
+        "the_vault:echoing_ingot": 1,
+        "minecraft:netherite_block": 1
+      },
+      "pattern": null
+    },
+    {
+      "id": "bhc:heart_amulet",
+      "action": "replace",
+      "path": "data/bhc/recipes/heart_amulet.json",
+      "output": {
+        "item": "bhc:heart_amulet",
+        "count": 1
+      },
+      "ingredients": {
+        "#forge:string": 2,
+        "#forge:glass": 3,
+        "the_vault:gem_pog": 1
+      },
+      "pattern": [
+        "A A",
+        "BCB",
+        " B "
+      ]
+    },
+    {
+      "id": "bhc:yellow_heart",
+      "action": "add",
+      "path": "data/bhc/recipes/yellow_heart.json",
+      "output": {
+        "item": "bhc:yellow_heart",
+        "count": 1
+      },
+      "ingredients": {
+        "the_vault:extraordinary_larimar": 1,
+        "minecraft:golden_carrot": 1,
+        "the_vault:vault_meat_block": 1
+      },
+      "pattern": null
+    },
+    {
+      "id": "bhc:green_heart",
+      "action": "add",
+      "path": "data/bhc/recipes/green_heart.json",
+      "output": {
+        "item": "bhc:green_heart",
+        "count": 1
+      },
+      "ingredients": {
+        "the_vault:gem_pog": 1,
+        "minecraft:golden_apple": 1,
+        "the_vault:vault_diamond_block": 1
+      },
+      "pattern": null
+    },
+    {
+      "id": "bhc:blue_heart",
+      "action": "add",
+      "path": "data/bhc/recipes/blue_heart.json",
+      "output": {
+        "item": "bhc:blue_heart",
+        "count": 1
+      },
+      "ingredients": {
+        "the_vault:echo_pog": 1,
+        "the_vault:extraordinary_larimar": 1,
+        "the_vault:extraordinary_benitoite": 1,
+        "the_vault:extraordinary_alexandrite": 1,
+        "the_vault:extraordinary_painite": 1,
+        "the_vault:extraordinary_black_opal": 1,
+        "the_vault:sour_orange": 1
+      },
+      "pattern": null
+    },
+    {
+      "id": "bhc:god_apple",
+      "action": "replace",
+      "path": "data/bhc/recipes/god_apple.json",
+      "output": {
+        "item": "minecraft:enchanted_golden_apple",
+        "count": 1
+      },
+      "ingredients": {
+        "the_vault:dreamstone": 4,
+        "#forge:storage_blocks/gold": 4,
+        "bhc:relic_apple": 1
+      },
+      "pattern": [
+        "ABA",
+        "BCB",
+        "ABA"
+      ]
+    },
+    {
+      "id": "bhc:relic_apple",
+      "action": "replace",
+      "path": "data/bhc/recipes/relic_apple.json",
+      "output": {
+        "item": "bhc:relic_apple",
+        "count": 1
+      },
+      "ingredients": {
+        "the_vault:perfect_larimar": 2,
+        "#forge:gems/diamond": 2,
+        "the_vault:perfect_alexandrite": 2,
+        "#forge:gems/emerald": 2,
+        "minecraft:golden_apple": 1
+      },
+      "pattern": [
+        "ABC",
+        "DED",
+        "CBA"
+      ]
+    }
+  ]
+}
